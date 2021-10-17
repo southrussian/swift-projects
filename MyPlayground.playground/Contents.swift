@@ -474,9 +474,10 @@ import Foundation
 //print(age)
 //print(human.height)
 
-func getHuman() -> (String, Int, Double) {
-    return (name: "danil", age: 20, height: 186)
-}
-let (name, _, _) = getHuman()
-print(name)
+//func getHuman() -> (String, Int, Double) {
+//    return (name: "danil", age: 20, height: 186)
+//}
+//let (name, _, _) = getHuman()
+//print(name)
+
 
