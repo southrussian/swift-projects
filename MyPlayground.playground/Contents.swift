@@ -521,56 +521,114 @@ import Foundation
 
 // classes
 
-enum Color: String{
-    case white
-    case black
-    case gray
-    case blue
-    case red
-    case green
-}
+//enum Color: String{
+//    case white
+//    case black
+//    case gray
+//    case blue
+//    case red
+//    case green
+//}
+//
+//class Transport {
+//    let year: Int
+//    var color: Color = .black
+//    let numberOfSeats: Int
+//
+//    func move() {
+//        print("Moving")
+//    }
+//
+//    init(year: Int, numberOfSeats: Int) {
+//        self.year = year
+//        self.numberOfSeats = numberOfSeats
+//
+//    }
+//}
+//
+//let transport = Transport(year: 2008, numberOfSeats: 7)
+//print(transport.color.rawValue)
+//
+//transport.color = .green
+//
+//class Car: Transport {
+//    var vin: String
+//    var stateNum: String?
+//    var music: Bool = false
+//
+//    init(vin: String, year: Int, numberOfSeats: Int) {
+//        self.vin = vin
+//        super.init(year: year, numberOfSeats: numberOfSeats)
+//    }
+//    override func move() {
+//        print("Moving on a road")
+//    }
+//    func sound() {
+//        print("!!!")
+//    }
+//}
+//
+//let car = Car(vin: "sfsjkdfgadsjkfsdjkf", year: 2004, numberOfSeats: 4)
+//transport.move()
+//car.move()
+//car.sound()
 
-class Transport {
-    let year: Int
-    var color: Color = .black
+// Structures
+
+struct Car {
     let numberOfSeats: Int
+    let year: Int
+    var milleage: Int
+    var isCrash: Bool = false
     
-    func move() {
-        print("Moving")
+    mutating func crash() {
+        print("Crashed")
+        self.isCrash = true
     }
+}
+
+class CarClass {
+    let numberOfSeats: Int
+    let year: Int
+    var milleage: Int
+    var isCrash: Bool = false
     
-    init(year: Int, numberOfSeats: Int) {
-        self.year = year
+    init(numberOfSeats: Int, year: Int, milleage: Int) {
         self.numberOfSeats = numberOfSeats
-        
+        self.year = year
+        self.milleage = milleage
     }
 }
 
-let transport = Transport(year: 2008, numberOfSeats: 7)
-print(transport.color.rawValue)
+var car = Car(numberOfSeats: 4, year: 2021, milleage: 0)
+car.milleage = 1000
 
-transport.color = .green
+var car2 = car
+car.milleage = 2000
 
-class Car: Transport {
-    var vin: String
-    var stateNum: String?
-    var music: Bool = false
-    
-    init(vin: String, year: Int, numberOfSeats: Int) {
-        self.vin = vin
-        super.init(year: year, numberOfSeats: numberOfSeats)
-    }
-    override func move() {
-        print("Moving on a road")
-    }
-    func sound() {
-        print("!!!")
-    }
+//print(car.milleage)
+//print(car2.milleage)
+
+let carClass = CarClass(numberOfSeats: 4, year: 2020, milleage: 0)
+carClass.milleage = 5000
+let carClass2 = carClass
+print(carClass.milleage)
+//print(carClass2.milleage)
+
+func changeMillieage(car: CarClass, newMillieage: Int) {
+    car.milleage = newMillieage
+}
+func changeMillieage(car: Car, newMillieage: Int) -> Car{
+    var carInside = car
+    carInside.milleage = newMillieage
+    return carInside
 }
 
-let car = Car(vin: "sfsjkdfgadsjkfsdjkf", year: 2004, numberOfSeats: 4)
-transport.move()
-car.move()
-car.sound()
+//changeMillieage(car: carClass, newMillieage: 400)
+//print(carClass.milleage)
+
+car = changeMillieage(car: car, newMillieage: 6000)
+print(car.milleage)
+// стркутуры не имеют наследования
 
 
