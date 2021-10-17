@@ -488,7 +488,7 @@ import Foundation
 //    case tablet
 //    case smartphone
 //    case smartWatch
-//    
+//
 //    }
 //enum MarkLaptop: String {
 //        case apple = "Apple Macbook"
@@ -519,5 +519,58 @@ import Foundation
 //    print("Планшет")
 //}
 
+// classes
+
+enum Color: String{
+    case white
+    case black
+    case gray
+    case blue
+    case red
+    case green
+}
+
+class Transport {
+    let year: Int
+    var color: Color = .black
+    let numberOfSeats: Int
+    
+    func move() {
+        print("Moving")
+    }
+    
+    init(year: Int, numberOfSeats: Int) {
+        self.year = year
+        self.numberOfSeats = numberOfSeats
+        
+    }
+}
+
+let transport = Transport(year: 2008, numberOfSeats: 7)
+print(transport.color.rawValue)
+
+transport.color = .green
+
+class Car: Transport {
+    var vin: String
+    var stateNum: String?
+    var music: Bool = false
+    
+    init(vin: String, year: Int, numberOfSeats: Int) {
+        self.vin = vin
+        super.init(year: year, numberOfSeats: numberOfSeats)
+    }
+    override func move() {
+        print("Moving on a road")
+    }
+    func sound() {
+        print("!!!")
+    }
+}
+
+let car = Car(vin: "sfsjkdfgadsjkfsdjkf", year: 2004, numberOfSeats: 4)
+transport.move()
+car.move()
+car.sound()
 
 
