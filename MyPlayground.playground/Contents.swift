@@ -482,42 +482,42 @@ import Foundation
 
 // emum
 
-enum TypeDevice {
-    case laptop(mark: MarkLaptop)
-    case desktop
-    case tablet
-    case smartphone
-    case smartWatch
-    
-    }
-enum MarkLaptop: String {
-        case apple = "Apple Macbook"
-        case acer = "Acer"
-        case hp = "HP"
-    }
-
-let markLaptopAcer = MarkLaptop(rawValue: "Acer")
-print(markLaptopAcer?.rawValue)
-
-let device: TypeDevice = .laptop(mark: .apple)
-switch device {
-case .laptop(let markLaptop) where markLaptop == .apple:
-    print("Macbook")
-case .laptop(let markLaptop) where markLaptop == .acer:
-    print("Ноутбук Acer")
-case .laptop(let markLaptop) where markLaptop == .hp:
-    print("Ноутбук HP")
-case .laptop(let mark):
-    print("Ноутбук \(mark.rawValue)")
-case .desktop:
-    print("Компьютер")
-case .smartWatch:
-    print("Умные часы")
-case .smartphone:
-    print("Смартфон")
-case .tablet:
-    print("Планшет")
-}
+//enum TypeDevice {
+//    case laptop(mark: MarkLaptop)
+//    case desktop
+//    case tablet
+//    case smartphone
+//    case smartWatch
+//    
+//    }
+//enum MarkLaptop: String {
+//        case apple = "Apple Macbook"
+//        case acer = "Acer"
+//        case hp = "HP"
+//    }
+//
+//let markLaptopAcer = MarkLaptop(rawValue: "Acer")
+//print(markLaptopAcer?.rawValue)
+//
+//let device: TypeDevice = .laptop(mark: .apple)
+//switch device {
+//case .laptop(let markLaptop) where markLaptop == .apple:
+//    print("Macbook")
+//case .laptop(let markLaptop) where markLaptop == .acer:
+//    print("Ноутбук Acer")
+//case .laptop(let markLaptop) where markLaptop == .hp:
+//    print("Ноутбук HP")
+//case .laptop(let mark):
+//    print("Ноутбук \(mark.rawValue)")
+//case .desktop:
+//    print("Компьютер")
+//case .smartWatch:
+//    print("Умные часы")
+//case .smartphone:
+//    print("Смартфон")
+//case .tablet:
+//    print("Планшет")
+//}
 
 
 
