@@ -100,10 +100,10 @@ import Foundation
 //print(hexadecimal)
 //
 //let myPhone = 89288218038
-////String(myPhone, radix: 2)
+//String(myPhone, radix: 2)
 //print(String(myPhone, radix: 2))
 //
-//// random number generation
+// random number generation
 //let flip = arc4random_uniform(8)
 //print(flip)
 //
@@ -575,60 +575,139 @@ import Foundation
 
 // Structures
 
-struct Car {
-    let numberOfSeats: Int
-    let year: Int
-    var milleage: Int
-    var isCrash: Bool = false
-    
-    mutating func crash() {
-        print("Crashed")
-        self.isCrash = true
-    }
-}
-
-class CarClass {
-    let numberOfSeats: Int
-    let year: Int
-    var milleage: Int
-    var isCrash: Bool = false
-    
-    init(numberOfSeats: Int, year: Int, milleage: Int) {
-        self.numberOfSeats = numberOfSeats
-        self.year = year
-        self.milleage = milleage
-    }
-}
-
-var car = Car(numberOfSeats: 4, year: 2021, milleage: 0)
-car.milleage = 1000
-
-var car2 = car
-car.milleage = 2000
+//struct Car {
+//    let numberOfSeats: Int
+//    let year: Int
+//    var milleage: Int
+//    var isCrash: Bool = false
+//
+//    mutating func crash() {
+//        print("Crashed")
+//        self.isCrash = true
+//    }
+//}
+//
+//class CarClass {
+//    let numberOfSeats: Int
+//    let year: Int
+//    var milleage: Int
+//    var isCrash: Bool = false
+//
+//    init(numberOfSeats: Int, year: Int, milleage: Int) {
+//        self.numberOfSeats = numberOfSeats
+//        self.year = year
+//        self.milleage = milleage
+//    }
+//}
+//
+//var car = Car(numberOfSeats: 4, year: 2021, milleage: 0)
+//car.milleage = 1000
+//
+//var car2 = car
+//car.milleage = 2000
 
 //print(car.milleage)
 //print(car2.milleage)
 
-let carClass = CarClass(numberOfSeats: 4, year: 2020, milleage: 0)
-carClass.milleage = 5000
-let carClass2 = carClass
-print(carClass.milleage)
-//print(carClass2.milleage)
-
-func changeMillieage(car: CarClass, newMillieage: Int) {
-    car.milleage = newMillieage
-}
-func changeMillieage(car: Car, newMillieage: Int) -> Car{
-    var carInside = car
-    carInside.milleage = newMillieage
-    return carInside
-}
+//let carClass = CarClass(numberOfSeats: 4, year: 2020, milleage: 0)
+//carClass.milleage = 5000
+//let carClass2 = carClass
+//print(carClass.milleage)
+////print(carClass2.milleage)
+//
+//func changeMillieage(car: CarClass, newMillieage: Int) {
+//    car.milleage = newMillieage
+//}
+//func changeMillieage(car: Car, newMillieage: Int) -> Car{
+//    var carInside = car
+//    carInside.milleage = newMillieage
+//    return carInside
+//}
 
 //changeMillieage(car: carClass, newMillieage: 400)
 //print(carClass.milleage)
 
-car = changeMillieage(car: car, newMillieage: 6000)
-print(car.milleage)
+//car = changeMillieage(car: car, newMillieage: 6000)
+//print(car.milleage)
 // стркутуры не имеют наследования
+
+// Closures
+
+var operation: (Double, Double) -> Double
+func plus(a1: Double, a2: Double) -> Double {
+    return a1 + a2
+}
+func minus(a1: Double, a2: Double) -> Double {
+    return a1 - a2
+}
+func multiply(a1: Double, a2: Double) -> Double {
+    return a1 * a2
+}
+func div(a1: Double, a2: Double) -> Double {
+    return a1 / a2
+}
+
+operation = plus
+
+let res = operation(10, 5)
+print(res)
+
+let shops:[String:Double] = ["Shop1":21000, "Shop2":24000, "Shop3":81000, "Shop4":20000, "Shop5":91000, ]
+
+func filterShops(shops: [String:Double], filter: (Double) -> Bool) -> [String:Double] {
+    var filteredShops = [String:Double]()
+    for (key, value) in shops {
+        if filter(value) {
+            filteredShops[key] = value
+        }
+    }
+    return filteredShops
+}
+
+func lowProfit(p: Double) -> Bool {
+    if p < 25000 {
+        return true
+    }
+    return false
+}
+func highProfit(p: Double) -> Bool {
+    if p > 25000 {
+        return true
+    }
+    return false
+}
+
+//let shopsLowProfit = filterShops(shops: shops, filter: lowProfit(p:))
+let shopsHighProfit = filterShops(shops: shops, filter: highProfit(p:))
+
+
+print(shopsHighProfit)
+
+let shopsLowProfit = filterShops(shops: shops) { $0 < 25000 }
+print(shopsLowProfit)
+
+var count = 0
+print(count)
+
+func requestData(success: (_ result: Int)->(), error: (_ text: String) -> ()) {
+    let response = true
+    if response {
+        success(10)
+    } else {
+        error("error")
+    }
+}
+requestData { result in
+    print(count)
+    count += 1
+    print(result)
+    print(count)
+} error: { text in
+    print(text)
+}
+
+var digits = [56, 78, 34, 90, 84, 23, 61]
+digits.sort(by:<)
+print(digits)
 
 
