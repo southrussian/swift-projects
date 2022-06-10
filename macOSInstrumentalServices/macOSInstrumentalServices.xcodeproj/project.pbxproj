@@ -7,22 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		58605FBC270AE787001B2703 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58605FBB270AE787001B2703 /* AppDelegate.swift */; };
-		58605FBE270AE787001B2703 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58605FBD270AE787001B2703 /* ContentView.swift */; };
-		58605FC2270AE789001B2703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58605FC1270AE789001B2703 /* Assets.xcassets */; };
-		58605FC5270AE789001B2703 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58605FC4270AE789001B2703 /* Preview Assets.xcassets */; };
+		58C8318D27888B06009A1C45 /* macOSInstrumentalServicesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C8318C27888B06009A1C45 /* macOSInstrumentalServicesApp.swift */; };
+		58C8318F27888B06009A1C45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C8318E27888B06009A1C45 /* ContentView.swift */; };
+		58C8319127888B07009A1C45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58C8319027888B07009A1C45 /* Assets.xcassets */; };
+		58C8319427888B07009A1C45 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58C8319327888B07009A1C45 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		58605FB8270AE787001B2703 /* ARLocalTv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARLocalTv.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		58605FBB270AE787001B2703 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		58605FBD270AE787001B2703 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		58605FC1270AE789001B2703 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		58605FC4270AE789001B2703 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		58C8318927888B06009A1C45 /* macOSInstrumentalServices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macOSInstrumentalServices.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58C8318C27888B06009A1C45 /* macOSInstrumentalServicesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macOSInstrumentalServicesApp.swift; sourceTree = "<group>"; };
+		58C8318E27888B06009A1C45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		58C8319027888B07009A1C45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58C8319327888B07009A1C45 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		58C8319527888B07009A1C45 /* macOSInstrumentalServices.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOSInstrumentalServices.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		58605FB5270AE787001B2703 /* Frameworks */ = {
+		58C8318627888B06009A1C45 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,85 +33,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		58605FAF270AE787001B2703 = {
+		58C8318027888B06009A1C45 = {
 			isa = PBXGroup;
 			children = (
-				58605FBA270AE787001B2703 /* ARLocalTv */,
-				58605FB9270AE787001B2703 /* Products */,
+				58C8318B27888B06009A1C45 /* macOSInstrumentalServices */,
+				58C8318A27888B06009A1C45 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		58605FB9270AE787001B2703 /* Products */ = {
+		58C8318A27888B06009A1C45 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				58605FB8270AE787001B2703 /* ARLocalTv.app */,
+				58C8318927888B06009A1C45 /* macOSInstrumentalServices.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		58605FBA270AE787001B2703 /* ARLocalTv */ = {
+		58C8318B27888B06009A1C45 /* macOSInstrumentalServices */ = {
 			isa = PBXGroup;
 			children = (
-				58889C15270C409000C3D13E /* Videos */,
-				58605FBB270AE787001B2703 /* AppDelegate.swift */,
-				58605FBD270AE787001B2703 /* ContentView.swift */,
-				58605FC1270AE789001B2703 /* Assets.xcassets */,
-				58605FC3270AE789001B2703 /* Preview Content */,
+				58C8318C27888B06009A1C45 /* macOSInstrumentalServicesApp.swift */,
+				58C8318E27888B06009A1C45 /* ContentView.swift */,
+				58C8319027888B07009A1C45 /* Assets.xcassets */,
+				58C8319527888B07009A1C45 /* macOSInstrumentalServices.entitlements */,
+				58C8319227888B07009A1C45 /* Preview Content */,
 			);
-			path = ARLocalTv;
+			path = macOSInstrumentalServices;
 			sourceTree = "<group>";
 		};
-		58605FC3270AE789001B2703 /* Preview Content */ = {
+		58C8319227888B07009A1C45 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				58605FC4270AE789001B2703 /* Preview Assets.xcassets */,
+				58C8319327888B07009A1C45 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		58889C15270C409000C3D13E /* Videos */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Videos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		58605FB7270AE787001B2703 /* ARLocalTv */ = {
+		58C8318827888B06009A1C45 /* macOSInstrumentalServices */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58605FC8270AE789001B2703 /* Build configuration list for PBXNativeTarget "ARLocalTv" */;
+			buildConfigurationList = 58C8319827888B07009A1C45 /* Build configuration list for PBXNativeTarget "macOSInstrumentalServices" */;
 			buildPhases = (
-				58605FB4270AE787001B2703 /* Sources */,
-				58605FB5270AE787001B2703 /* Frameworks */,
-				58605FB6270AE787001B2703 /* Resources */,
+				58C8318527888B06009A1C45 /* Sources */,
+				58C8318627888B06009A1C45 /* Frameworks */,
+				58C8318727888B06009A1C45 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ARLocalTv;
-			productName = ARLocalTv;
-			productReference = 58605FB8270AE787001B2703 /* ARLocalTv.app */;
+			name = macOSInstrumentalServices;
+			productName = macOSInstrumentalServices;
+			productReference = 58C8318927888B06009A1C45 /* macOSInstrumentalServices.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		58605FB0270AE787001B2703 /* Project object */ = {
+		58C8318127888B06009A1C45 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					58605FB7270AE787001B2703 = {
-						CreatedOnToolsVersion = 13.0;
+					58C8318827888B06009A1C45 = {
+						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 58605FB3270AE787001B2703 /* Build configuration list for PBXProject "ARLocalTv" */;
+			buildConfigurationList = 58C8318427888B06009A1C45 /* Build configuration list for PBXProject "macOSInstrumentalServices" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,42 +112,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 58605FAF270AE787001B2703;
-			productRefGroup = 58605FB9270AE787001B2703 /* Products */;
+			mainGroup = 58C8318027888B06009A1C45;
+			productRefGroup = 58C8318A27888B06009A1C45 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				58605FB7270AE787001B2703 /* ARLocalTv */,
+				58C8318827888B06009A1C45 /* macOSInstrumentalServices */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		58605FB6270AE787001B2703 /* Resources */ = {
+		58C8318727888B06009A1C45 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58605FC5270AE789001B2703 /* Preview Assets.xcassets in Resources */,
-				58605FC2270AE789001B2703 /* Assets.xcassets in Resources */,
+				58C8319427888B07009A1C45 /* Preview Assets.xcassets in Resources */,
+				58C8319127888B07009A1C45 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		58605FB4270AE787001B2703 /* Sources */ = {
+		58C8318527888B06009A1C45 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58605FBE270AE787001B2703 /* ContentView.swift in Sources */,
-				58605FBC270AE787001B2703 /* AppDelegate.swift in Sources */,
+				58C8318F27888B06009A1C45 /* ContentView.swift in Sources */,
+				58C8318D27888B06009A1C45 /* macOSInstrumentalServicesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		58605FC6270AE789001B2703 /* Debug */ = {
+		58C8319627888B07009A1C45 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -204,17 +198,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		58605FC7270AE789001B2703 /* Release */ = {
+		58C8319727888B07009A1C45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -259,100 +253,91 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		58605FC9270AE789001B2703 /* Debug */ = {
+		58C8319927888B07009A1C45 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOSInstrumentalServices/macOSInstrumentalServices.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ARLocalTv/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"macOSInstrumentalServices/Preview Content\"";
 				DEVELOPMENT_TEAM = L5N89ZQYBM;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
+					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = vk.com.south.russian.ARLocalTv;
+				PRODUCT_BUNDLE_IDENTIFIER = vk.com.south.russian.macOSInstrumentalServices;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		58605FCA270AE789001B2703 /* Release */ = {
+		58C8319A27888B07009A1C45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOSInstrumentalServices/macOSInstrumentalServices.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ARLocalTv/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"macOSInstrumentalServices/Preview Content\"";
 				DEVELOPMENT_TEAM = L5N89ZQYBM;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
+					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = vk.com.south.russian.ARLocalTv;
+				PRODUCT_BUNDLE_IDENTIFIER = vk.com.south.russian.macOSInstrumentalServices;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		58605FB3270AE787001B2703 /* Build configuration list for PBXProject "ARLocalTv" */ = {
+		58C8318427888B06009A1C45 /* Build configuration list for PBXProject "macOSInstrumentalServices" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				58605FC6270AE789001B2703 /* Debug */,
-				58605FC7270AE789001B2703 /* Release */,
+				58C8319627888B07009A1C45 /* Debug */,
+				58C8319727888B07009A1C45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58605FC8270AE789001B2703 /* Build configuration list for PBXNativeTarget "ARLocalTv" */ = {
+		58C8319827888B07009A1C45 /* Build configuration list for PBXNativeTarget "macOSInstrumentalServices" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				58605FC9270AE789001B2703 /* Debug */,
-				58605FCA270AE789001B2703 /* Release */,
+				58C8319927888B07009A1C45 /* Debug */,
+				58C8319A27888B07009A1C45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 58605FB0270AE787001B2703 /* Project object */;
+	rootObject = 58C8318127888B06009A1C45 /* Project object */;
 }

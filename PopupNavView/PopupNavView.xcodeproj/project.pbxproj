@@ -7,22 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		58605FBC270AE787001B2703 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58605FBB270AE787001B2703 /* AppDelegate.swift */; };
-		58605FBE270AE787001B2703 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58605FBD270AE787001B2703 /* ContentView.swift */; };
-		58605FC2270AE789001B2703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58605FC1270AE789001B2703 /* Assets.xcassets */; };
-		58605FC5270AE789001B2703 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58605FC4270AE789001B2703 /* Preview Assets.xcassets */; };
+		5848069527BED6BA008E4A3C /* PopupNavViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5848069427BED6BA008E4A3C /* PopupNavViewApp.swift */; };
+		5848069727BED6BA008E4A3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5848069627BED6BA008E4A3C /* ContentView.swift */; };
+		5848069927BED6BB008E4A3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5848069827BED6BB008E4A3C /* Assets.xcassets */; };
+		5848069C27BED6BB008E4A3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5848069B27BED6BB008E4A3C /* Preview Assets.xcassets */; };
+		584806A827BED7C0008E4A3C /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584806A727BED7C0008E4A3C /* Task.swift */; };
+		584806AA27BED7E9008E4A3C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584806A927BED7E9008E4A3C /* Home.swift */; };
+		584806AC27BEDAD7008E4A3C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584806AB27BEDAD7008E4A3C /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		58605FB8270AE787001B2703 /* ARLocalTv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARLocalTv.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		58605FBB270AE787001B2703 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		58605FBD270AE787001B2703 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		58605FC1270AE789001B2703 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		58605FC4270AE789001B2703 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5848069127BED6BA008E4A3C /* PopupNavView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopupNavView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5848069427BED6BA008E4A3C /* PopupNavViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupNavViewApp.swift; sourceTree = "<group>"; };
+		5848069627BED6BA008E4A3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5848069827BED6BB008E4A3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5848069B27BED6BB008E4A3C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		584806A727BED7C0008E4A3C /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		584806A927BED7E9008E4A3C /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		584806AB27BEDAD7008E4A3C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		58605FB5270AE787001B2703 /* Frameworks */ = {
+		5848068E27BED6BA008E4A3C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,85 +38,104 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		58605FAF270AE787001B2703 = {
+		5848068827BED6BA008E4A3C = {
 			isa = PBXGroup;
 			children = (
-				58605FBA270AE787001B2703 /* ARLocalTv */,
-				58605FB9270AE787001B2703 /* Products */,
+				5848069327BED6BA008E4A3C /* PopupNavView */,
+				5848069227BED6BA008E4A3C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		58605FB9270AE787001B2703 /* Products */ = {
+		5848069227BED6BA008E4A3C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				58605FB8270AE787001B2703 /* ARLocalTv.app */,
+				5848069127BED6BA008E4A3C /* PopupNavView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		58605FBA270AE787001B2703 /* ARLocalTv */ = {
+		5848069327BED6BA008E4A3C /* PopupNavView */ = {
 			isa = PBXGroup;
 			children = (
-				58889C15270C409000C3D13E /* Videos */,
-				58605FBB270AE787001B2703 /* AppDelegate.swift */,
-				58605FBD270AE787001B2703 /* ContentView.swift */,
-				58605FC1270AE789001B2703 /* Assets.xcassets */,
-				58605FC3270AE789001B2703 /* Preview Content */,
+				584806A427BED753008E4A3C /* Helpers */,
+				584806A327BED742008E4A3C /* Model */,
+				584806A227BED733008E4A3C /* View */,
+				5848069427BED6BA008E4A3C /* PopupNavViewApp.swift */,
+				5848069627BED6BA008E4A3C /* ContentView.swift */,
+				5848069827BED6BB008E4A3C /* Assets.xcassets */,
+				5848069A27BED6BB008E4A3C /* Preview Content */,
 			);
-			path = ARLocalTv;
+			path = PopupNavView;
 			sourceTree = "<group>";
 		};
-		58605FC3270AE789001B2703 /* Preview Content */ = {
+		5848069A27BED6BB008E4A3C /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				58605FC4270AE789001B2703 /* Preview Assets.xcassets */,
+				5848069B27BED6BB008E4A3C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		58889C15270C409000C3D13E /* Videos */ = {
+		584806A227BED733008E4A3C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				584806A927BED7E9008E4A3C /* Home.swift */,
 			);
-			path = Videos;
+			path = View;
+			sourceTree = "<group>";
+		};
+		584806A327BED742008E4A3C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				584806A727BED7C0008E4A3C /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		584806A427BED753008E4A3C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				584806AB27BEDAD7008E4A3C /* Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		58605FB7270AE787001B2703 /* ARLocalTv */ = {
+		5848069027BED6BA008E4A3C /* PopupNavView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58605FC8270AE789001B2703 /* Build configuration list for PBXNativeTarget "ARLocalTv" */;
+			buildConfigurationList = 5848069F27BED6BB008E4A3C /* Build configuration list for PBXNativeTarget "PopupNavView" */;
 			buildPhases = (
-				58605FB4270AE787001B2703 /* Sources */,
-				58605FB5270AE787001B2703 /* Frameworks */,
-				58605FB6270AE787001B2703 /* Resources */,
+				5848068D27BED6BA008E4A3C /* Sources */,
+				5848068E27BED6BA008E4A3C /* Frameworks */,
+				5848068F27BED6BA008E4A3C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ARLocalTv;
-			productName = ARLocalTv;
-			productReference = 58605FB8270AE787001B2703 /* ARLocalTv.app */;
+			name = PopupNavView;
+			productName = PopupNavView;
+			productReference = 5848069127BED6BA008E4A3C /* PopupNavView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		58605FB0270AE787001B2703 /* Project object */ = {
+		5848068927BED6BA008E4A3C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					58605FB7270AE787001B2703 = {
-						CreatedOnToolsVersion = 13.0;
+					5848069027BED6BA008E4A3C = {
+						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 58605FB3270AE787001B2703 /* Build configuration list for PBXProject "ARLocalTv" */;
+			buildConfigurationList = 5848068C27BED6BA008E4A3C /* Build configuration list for PBXProject "PopupNavView" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,42 +143,45 @@
 				en,
 				Base,
 			);
-			mainGroup = 58605FAF270AE787001B2703;
-			productRefGroup = 58605FB9270AE787001B2703 /* Products */;
+			mainGroup = 5848068827BED6BA008E4A3C;
+			productRefGroup = 5848069227BED6BA008E4A3C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				58605FB7270AE787001B2703 /* ARLocalTv */,
+				5848069027BED6BA008E4A3C /* PopupNavView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		58605FB6270AE787001B2703 /* Resources */ = {
+		5848068F27BED6BA008E4A3C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58605FC5270AE789001B2703 /* Preview Assets.xcassets in Resources */,
-				58605FC2270AE789001B2703 /* Assets.xcassets in Resources */,
+				5848069C27BED6BB008E4A3C /* Preview Assets.xcassets in Resources */,
+				5848069927BED6BB008E4A3C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		58605FB4270AE787001B2703 /* Sources */ = {
+		5848068D27BED6BA008E4A3C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58605FBE270AE787001B2703 /* ContentView.swift in Sources */,
-				58605FBC270AE787001B2703 /* AppDelegate.swift in Sources */,
+				584806AC27BEDAD7008E4A3C /* Extensions.swift in Sources */,
+				584806A827BED7C0008E4A3C /* Task.swift in Sources */,
+				5848069727BED6BA008E4A3C /* ContentView.swift in Sources */,
+				584806AA27BED7E9008E4A3C /* Home.swift in Sources */,
+				5848069527BED6BA008E4A3C /* PopupNavViewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		58605FC6270AE789001B2703 /* Debug */ = {
+		5848069D27BED6BB008E4A3C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -204,7 +232,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -214,7 +242,7 @@
 			};
 			name = Debug;
 		};
-		58605FC7270AE789001B2703 /* Release */ = {
+		5848069E27BED6BB008E4A3C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -259,7 +287,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -269,22 +297,20 @@
 			};
 			name = Release;
 		};
-		58605FC9270AE789001B2703 /* Debug */ = {
+		584806A027BED6BB008E4A3C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ARLocalTv/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PopupNavView/Preview Content\"";
 				DEVELOPMENT_TEAM = L5N89ZQYBM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -292,7 +318,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = vk.com.south.russian.ARLocalTv;
+				PRODUCT_BUNDLE_IDENTIFIER = vk.com.south.russian.PopupNavView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -300,22 +326,20 @@
 			};
 			name = Debug;
 		};
-		58605FCA270AE789001B2703 /* Release */ = {
+		584806A127BED6BB008E4A3C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ARLocalTv/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PopupNavView/Preview Content\"";
 				DEVELOPMENT_TEAM = L5N89ZQYBM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,7 +347,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = vk.com.south.russian.ARLocalTv;
+				PRODUCT_BUNDLE_IDENTIFIER = vk.com.south.russian.PopupNavView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -334,25 +358,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		58605FB3270AE787001B2703 /* Build configuration list for PBXProject "ARLocalTv" */ = {
+		5848068C27BED6BA008E4A3C /* Build configuration list for PBXProject "PopupNavView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				58605FC6270AE789001B2703 /* Debug */,
-				58605FC7270AE789001B2703 /* Release */,
+				5848069D27BED6BB008E4A3C /* Debug */,
+				5848069E27BED6BB008E4A3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58605FC8270AE789001B2703 /* Build configuration list for PBXNativeTarget "ARLocalTv" */ = {
+		5848069F27BED6BB008E4A3C /* Build configuration list for PBXNativeTarget "PopupNavView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				58605FC9270AE789001B2703 /* Debug */,
-				58605FCA270AE789001B2703 /* Release */,
+				584806A027BED6BB008E4A3C /* Debug */,
+				584806A127BED6BB008E4A3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 58605FB0270AE787001B2703 /* Project object */;
+	rootObject = 5848068927BED6BA008E4A3C /* Project object */;
 }

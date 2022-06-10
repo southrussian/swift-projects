@@ -74,7 +74,7 @@ extension ARView {
     }
     
     func loadVideoMaterial(for entity: ModelEntity) {
-        let asset = AVAsset(url: Bundle.main.url(forResource: "DemoGilfoyle", withExtension: "mp4")!)
+        let asset = AVAsset(url: Bundle.main.url(forResource: "PianoCat", withExtension: "mp4")!)
         let playerItem = AVPlayerItem(asset: asset)
         let player = AVPlayer()
         entity.model?.materials = [VideoMaterial(avPlayer: player)]

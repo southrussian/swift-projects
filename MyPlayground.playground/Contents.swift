@@ -633,81 +633,323 @@ import Foundation
 
 // Closures
 
-var operation: (Double, Double) -> Double
-func plus(a1: Double, a2: Double) -> Double {
-    return a1 + a2
-}
-func minus(a1: Double, a2: Double) -> Double {
-    return a1 - a2
-}
-func multiply(a1: Double, a2: Double) -> Double {
-    return a1 * a2
-}
-func div(a1: Double, a2: Double) -> Double {
-    return a1 / a2
-}
-
-operation = plus
-
-let res = operation(10, 5)
-print(res)
-
-let shops:[String:Double] = ["Shop1":21000, "Shop2":24000, "Shop3":81000, "Shop4":20000, "Shop5":91000, ]
-
-func filterShops(shops: [String:Double], filter: (Double) -> Bool) -> [String:Double] {
-    var filteredShops = [String:Double]()
-    for (key, value) in shops {
-        if filter(value) {
-            filteredShops[key] = value
-        }
-    }
-    return filteredShops
-}
-
-func lowProfit(p: Double) -> Bool {
-    if p < 25000 {
-        return true
-    }
-    return false
-}
-func highProfit(p: Double) -> Bool {
-    if p > 25000 {
-        return true
-    }
-    return false
-}
-
+//var operation: (Double, Double) -> Double
+//func plus(a1: Double, a2: Double) -> Double {
+//    return a1 + a2
+//}
+//func minus(a1: Double, a2: Double) -> Double {
+//    return a1 - a2
+//}
+//func multiply(a1: Double, a2: Double) -> Double {
+//    return a1 * a2
+//}
+//func div(a1: Double, a2: Double) -> Double {
+//    return a1 / a2
+//}
+//
+//operation = plus
+//
+//let res = operation(10, 5)
+//print(res)
+//
+//let shops:[String:Double] = ["Shop1":21000, "Shop2":24000, "Shop3":81000, "Shop4":20000, "Shop5":91000, ]
+//
+//func filterShops(shops: [String:Double], filter: (Double) -> Bool) -> [String:Double] {
+//    var filteredShops = [String:Double]()
+//    for (key, value) in shops {
+//        if filter(value) {
+//            filteredShops[key] = value
+//        }
+//    }
+//    return filteredShops
+//}
+//
+//func lowProfit(p: Double) -> Bool {
+//    if p < 25000 {
+//        return true
+//    }
+//    return false
+//}
+//func highProfit(p: Double) -> Bool {
+//    if p > 25000 {
+//        return true
+//    }
+//    return false
+//}
+//
 //let shopsLowProfit = filterShops(shops: shops, filter: lowProfit(p:))
-let shopsHighProfit = filterShops(shops: shops, filter: highProfit(p:))
+//let shopsHighProfit = filterShops(shops: shops, filter: highProfit(p:))
+//
+//
+//print(shopsHighProfit)
+//
+//let shopsLowProfit = filterShops(shops: shops) { $0 < 25000 }
+//print(shopsLowProfit)
+//
+//var count = 0
+//print(count)
+//
+//func requestData(success: (_ result: Int)->(), error: (_ text: String) -> ()) {
+//    let response = true
+//    if response {
+//        success(10)
+//    } else {
+//        error("error")
+//    }
+//}
+//requestData { result in
+//    print(count)
+//    count += 1
+//    print(result)
+//    print(count)
+//} error: { text in
+//    print(text)
+//}
+//
+//var digits = [56, 78, 34, 90, 84, 23, 61]
+//digits.sort(by:<)
+//print(digits)
 
+// Приведние типов
 
-print(shopsHighProfit)
+//class Human {
+//    var name: String
+//
+//    func talk() {
+//        print("\(name) говорит")
+//    }
+//    init(name: String) {
+//        self.name = name
+//    }
+//}
+//
+//class Student: Human {
+//    var university: String
+//
+//    func study() {
+//        print("Я люблю учиться в \(university)")
+//    }
+//    init(name: String, university: String) {
+//        self.university = university
+//        super.init(name: name)
+//    }
+//}
+//
+//class Worker: Human {
+//    var company: String
+//
+//    func work() {
+//        print("Я люблю работать в \(company)")
+//    }
+//    init(name: String, company: String) {
+//        self.company = company
+//        super.init(name: name)
+//    }
+//}
+//
+//class Child: Human {
+//    var hero: String
+//
+//    func play() {
+//        print("Я люблю играть в \(hero)")
+//    }
+//    init(name: String, hero: String) {
+//        self.hero = hero
+//        super.init(name: name)
+//    }
+//}
 
-let shopsLowProfit = filterShops(shops: shops) { $0 < 25000 }
-print(shopsLowProfit)
+//let student1 = Student(name: "Николай", university: "ИТМО")
+//let student2 = Student(name: "Алексей", university: "СПбГУ")
+//
+//let worker1 = Worker(name: "Александр", company: "ЕПАМ")
+//let worker2 = Worker(name: "Алена", company: "cern")
 
-var count = 0
-print(count)
+//let child1 = Child(name: "Артем", hero: "Веном")
+//let child2 = Child(name: "Коля", hero: "Воитель")
+//
+//let arrayPeople = [student1, student2, worker1, worker2, child1, child2]
+//
+//for people in arrayPeople {
+//    people.talk()
+//
+//    if people is Student {
+//        let student = people as! Student
+//        student.study()
+//    } else if people is Worker {
+//        let worker = people as! Worker
+//        worker.work()
+//    } else if people is Child {
+//        let child = people as! Child
+//        child.play()
+//    }
+//}
 
-func requestData(success: (_ result: Int)->(), error: (_ text: String) -> ()) {
-    let response = true
-    if response {
-        success(10)
-    } else {
-        error("error")
+//struct Car {
+//    static var count: Int = 0
+//    static func getNumberCars()->Int{
+//        return Car.count
+//    }
+//    var mark: String
+//    var model: String
+//    var year: Int {
+//        willSet {
+//            print("OldValue - \(self.year)")
+//            print("NewValue - \(newValue)")
+//        }
+//        didSet {
+//            if self.year < 2000 {
+//                self.year = 2000
+//            }
+//          print("CurrentValue year - \(self.year)")
+//        }
+//    }
+//    var fullName: String {
+//        get {
+//            return "\(mark) \(model) \(year)"
+//        }
+//        set{
+//            print(newValue)
+//            let full = newValue.components(separatedBy: " ")
+//            if full.count > 2{
+//                self.mark = full[0]
+//                self.model = full[1]
+//                if let newYear = Int(full[2]){
+//                    self.year = newYear
+//                }
+//            }
+//        }
+//    }
+//    lazy var price: Int = getPric3e()
+//    init(mark: String, model: String, year: Int){
+//        self.mark = mark
+//        self.model = model
+//        self.year = year
+//        Car.count += 1
+//    }
+//}
+
+//func getPrice()->Int{
+//    print("Start")
+//    var i = 0
+//    while i < 300000 {
+//        i += 1
+//    }
+//    print("Finish")
+//    return 300000
+//}
+
+//var car1 = Car(mark: "Toyota", model: "Rav4", year: 2020)
+//var car2 = Car(mark: "Toyota", model: "Corolla", year: 2007)
+//var car3 = Car(mark: "Toyota", model: "Mark 2", year: 1999)
+//print(car.fullName)
+//print(car.price)
+//print(Car.getNumberCars())
+//car.year = 1999
+//print(car.fullName)
+//car.fullName = "Mazda Miata 2005"
+//print(car.fullName)
+
+// protocols
+
+//protocol Movable{
+//    var speed: Int {get}
+//    func move()
+//}
+//
+//class Human: Movable{
+//    var speed: Int = 3
+//    func move() {
+//        print("\(speed)")
+//    }
+//    var firstName: String
+//    init(firstName: String) {
+//        self.firstName = firstName
+//    }
+//}
+//struct Car: Movable{
+//    var speed: Int = 120
+//    func move() {
+//        print("\(speed)")
+//    }
+//    var mark: String
+//}
+//
+//struct Cat: Movable{
+//    var speed: Int = 15
+//    func move() {
+//        print("\(speed)")
+//    }
+//    var name: String
+//}
+
+//let human = Human(firstName: "Alex")
+//let car = Car(mark: "Audi")
+//let cat = Cat(name: "Murka")
+//
+//let objects: [Movable] = [human, car, cat]
+//
+//for objects in objects{
+//    objects.move()
+//}
+//
+//var wallet = [100, 200, 100, 500, 1000, 2000, 1000, 5000]
+//
+//func handle100(wallet: [Int]) -> [Int] {
+//    var newWallet = [Int]()
+//    for banknote in wallet {
+//        if banknote >= 1000 {
+//            newWallet.append(banknote)
+//        }
+//    }
+//    return newWallet
+//}
+//
+//print(handle100(wallet: wallet))
+
+// extensions
+
+extension String{
+    mutating func clear(){
+        
+        self = self.trimmingCharacters(in: .whitespaces)
+        self = self.prefix(1).uppercased() + self.dropFirst()
+    }
+    var isShort: Bool{
+        return self.count <= 15
     }
 }
-requestData { result in
-    print(count)
-    count += 1
-    print(result)
-    print(count)
-} error: { text in
-    print(text)
+
+var str = "  this is test string  "
+str.clear()
+print(str.isShort)
+
+protocol Movable{
+    var speed: Int {get}
+    func move()
+//    func jump()
 }
 
-var digits = [56, 78, 34, 90, 84, 23, 61]
-digits.sort(by:<)
-print(digits)
+struct Human{
+    var name: String
+
+}
+
+extension Human: Movable{
+    var speed: Int {
+        return 5
+    }
+    func move() {
+        print("top")
+    }
+    func jump(){
+        print("Up")
+    }
+}
+var human1 = Human(name: "Danil")
+human1.move()
+human1.jump()
+print(human1.name)
+
 
 
