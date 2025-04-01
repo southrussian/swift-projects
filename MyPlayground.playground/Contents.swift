@@ -1,12 +1,31 @@
-let array = [1, 5, 8, 9, 11, 12]
-//for i in array {
-//    print(i * 3)
-//}
+import Foundation
+import CoreLocation
 
-func multiplythree(array: [Int]) -> [Int] {
-    let mappedArr = array.map { $0 * 3 }
-    print(mappedArr)
-    return mappedArr
+class MyLocationManager: NSObject, CLLocationManagerDelegate {
+    let locationManager: CLLocationManager
+    
+    private var completionHandler: ((_ location: CLLocation) -> Void)? // <1>
+    
+    override init() {
+        locationManager = CLLocationManager()
+        super.init()
+        locationManager.delegate = self
+    }
+    
+    func getCurrentLocation(_ completion: @escaping (_ location: CLLocation) -> Void) { // <2>
+        completionHandler = completion // <3>
+        locationManager.requestLocation()
+    }
+    
+    // MARK: - CLLocationManagerDelegate
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first {
+            completionHandler?(location) // <4>
+            completionHandler = nil // <5>
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {}
 }
 
-multiplythree(array: array)
+

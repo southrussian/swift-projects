@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         return imageView
     }()
     
-    private let button: UIButton = { // создание переменной окна под картинку
+    private let button: UIButton = { // создание кнопки
         let button = UIButton()
         button.layer.cornerRadius = 15
         button.backgroundColor = .black
